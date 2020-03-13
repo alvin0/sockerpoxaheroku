@@ -2,10 +2,10 @@ import Config
 import System
 
 config :poxa,
-  port: get_env("PORT", "8080") |> String.to_integer(),
-  app_key: get_env("POXA_APP_KEY", "app_key"),
-  app_secret: get_env("POXA_SECRET", "secret"),
-  app_id: get_env("POXA_APP_ID", "app_id"),
+  port: get_env("PORT", "80") |> String.to_integer(),
+  app_key: get_env("POXA_APP_KEY", "35cfa3024e72a00ebf87fd49b4c79e13"),
+  app_secret: get_env("POXA_SECRET", "7fd62e3127676f5fd22db9ce2ca6a98f"),
+  app_id: get_env("POXA_APP_ID", "35cfa3024e72a00ebf87fd49b4c79e13"),
   registry_adapter: get_env("POXA_REGISTRY_ADAPTER", "gproc"),
   web_hook: get_env("WEB_HOOK", nil),
   payload_limit: get_env("PAYLOAD_LIMIT") || 10_000,

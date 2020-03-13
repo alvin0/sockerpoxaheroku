@@ -6,7 +6,7 @@ end
 import System
 
 config :poxa,
-  port: get_env("PORT", "8080") |> String.to_integer(),
+  port: get_env("PORT", "80") |> String.to_integer(),
   app_key: get_env("POXA_APP_KEY", "35cfa3024e72a00ebf87fd49b4c79e13"),
   app_secret: get_env("POXA_SECRET", "7fd62e3127676f5fd22db9ce2ca6a98f"),
   app_id: get_env("POXA_APP_ID", "35cfa3024e72a00ebf87fd49b4c79e13"),
